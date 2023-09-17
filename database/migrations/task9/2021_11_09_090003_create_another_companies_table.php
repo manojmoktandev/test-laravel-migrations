@@ -15,7 +15,7 @@ class CreateAnotherCompaniesTable extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title')->default('First');
             $table->timestamps();
         });
     }
